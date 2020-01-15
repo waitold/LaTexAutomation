@@ -1,4 +1,4 @@
-# LaTexCompile
+# LaTexAutomation
 IntelliJ IDEAにてLatexのpdf出力を自動化
 
 
