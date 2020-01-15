@@ -15,7 +15,7 @@ rem outとpdf出力用ディレクトリを作成
 
 rem コンパイル
 call copy %filePath%.bib %outDirPath%\%filename%.bib
- call platex -output-derectory=%outDirPath% -synctex=1 -jobname=%filename% -kanji=utf8 -guess-input-enc %filePath%
+ call platex -output-directory=%outDirPath% -synctex=1 -jobname=%filename% -kanji=utf8 -guess-input-enc %filePath%
  call pbibtex %filename% -kanji=utf8
  call platex -output-directory=%outDirPath% -synctex=1 -jobname=%filename% -kanji=utf8 -guess-input-enc %filePath%
  call platex -output-directory=%outDirPath% -synctex=1 -jobname=%filename% -kanji=utf8 -guess-input-enc %filePath% && dvipdfmx %outDirPath%\%filename%.dvi -o %dirPath%\pdf\%filename%.pdf
